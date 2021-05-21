@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons  slot="start">
+      <ion-button routerLink="/auth/login" >
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      Registrar
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+  <ion-content>
+    <figure text-center class="logo">
+      <img src="assets/img/logo.jpg"/>
+    </figure>
+    <ion-title class="ion-text-center"> Registrate como:</ion-title>
+
+    <ion-button class="botonMedico" (click)="goSoli()">Centro Medico</ion-button>
+  <ion-button class="botonPaciente"   color="secondary" (click)="goPaci()">Paciente </ion-button> <hr>
+  </ion-content>
