@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RegistrarComponent} from './auth/registrar/registrar.component';
 
+
 @NgModule({
   declarations: [AppComponent,RegistrarComponent],
   entryComponents: [RegistrarComponent],

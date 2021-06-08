@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons  slot="start">
+      <ion-button (click)="goRegis()" >
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      Listado De Suscriptores
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+<ion-list>
+
+<button ion-item *ngFor="let item of listaDeSuscriptores">
+
+  <ion-label>
+    {{item.nombre}}
+  </ion-label>
+ 
+</button> 
+</ion-list>
+
+</ion-content>
