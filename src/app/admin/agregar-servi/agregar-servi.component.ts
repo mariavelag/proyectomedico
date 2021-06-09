@@ -9,13 +9,13 @@ import {Router} from '@angular/router';
 })
 export class AgregarServiComponent implements OnInit {
 
-  constructor(public alertController: AlertController,private router:Router) { }
+  constructor(public alertController: AlertController,private router: Router) { }
 
   ngOnInit() {}
   goRegis(){
-    this.router.navigate(['admin/inicio'])
+    this.router.navigate(['admin/inicio']);
   };
-  
+
   async presentAlertConfirm() {
     const alert = await this.alertController.create({
       cssClass: 'my-custom-class',

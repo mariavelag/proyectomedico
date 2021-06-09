@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController } from '@ionic/angular';
-import {Router} from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-agregue-sus',
@@ -8,14 +8,16 @@ import {Router} from '@angular/router';
   styleUrls: ['./agregue-sus.component.scss'],
 })
 export class AgregueSusComponent implements OnInit {
-
-  constructor(public alertController: AlertController,private router:Router) { }
+  constructor(
+    public alertController: AlertController,
+    private router: Router
+  ) {}
 
   ngOnInit() {}
-  goRegis(){
-    this.router.navigate(['admin/inicio'])
-  };
-  
+  goRegis() {
+    this.router.navigate(['admin/inicio']);
+  }
+
   async presentAlertConfirm() {
     const alert = await this.alertController.create({
       cssClass: 'my-custom-class',
@@ -28,18 +30,17 @@ export class AgregueSusComponent implements OnInit {
           cssClass: 'secondary',
           handler: (blah) => {
             console.log('Confirm Cancel: blah');
-          }
-        }, {
+          },
+        },
+        {
           text: 'Okay',
           handler: () => {
             console.log('Confirm Okay');
-          }
-        }
-      ]
+          },
+        },
+      ],
     });
 
     await alert.present();
-  };
-
-
+  }
 }

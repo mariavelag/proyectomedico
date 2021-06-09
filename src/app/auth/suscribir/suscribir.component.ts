@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController } from '@ionic/angular';
-import {Router} from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-suscribir',
@@ -8,8 +8,10 @@ import {Router} from '@angular/router';
   styleUrls: ['./suscribir.component.scss'],
 })
 export class SuscribirComponent implements OnInit {
-
-  constructor(public alertController: AlertController,private router:Router) { }
+  constructor(
+    public alertController: AlertController,
+    private router: Router
+  ) {}
 
   ngOnInit() {}
 
@@ -25,20 +27,20 @@ export class SuscribirComponent implements OnInit {
           cssClass: 'secondary',
           handler: (blah) => {
             console.log('Confirm Cancel: blah');
-          }
-        }, {
+          },
+        },
+        {
           text: 'Okay',
           handler: () => {
             console.log('Confirm Okay');
-          }
-        }
-      ]
+          },
+        },
+      ],
     });
 
     await alert.present();
-  };
-  goRegis(){
-    this.router.navigate(['/auth/registrar'])
-  };
-
+  }
+  goRegis() {
+    this.router.navigate(['/auth/registrar']);
+  }
 }

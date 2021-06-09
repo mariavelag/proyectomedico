@@ -5,14 +5,14 @@
                 <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
             </ion-button>
         </ion-buttons>
-        <ion-title> Listado De Suscriptores </ion-title>
+        <ion-title> Listado De Servicios </ion-title>
     </ion-toolbar>
 </ion-header>
 
 <ion-content>
     <ion-searchbar placeholder="Buscar"></ion-searchbar>
     <ion-list>
-        <ion-item item-stars *ngFor="let item of listaDeSuscriptores">
+        <ion-item item-stars *ngFor="let item of listaDeServicios">
             <ion-avatar>
                 <img [src]="item.imgURL" />
             </ion-avatar>
