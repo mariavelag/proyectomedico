@@ -3,23 +3,26 @@ import { AlertController } from '@ionic/angular';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-suscribir',
-  templateUrl: './suscribir.component.html',
-  styleUrls: ['./suscribir.component.scss'],
+  selector: 'app-agregue-sus',
+  templateUrl: './agregue-sus.component.html',
+  styleUrls: ['./agregue-sus.component.scss'],
 })
-export class SuscribirComponent implements OnInit {
+export class AgregueSusComponent implements OnInit {
   constructor(
     public alertController: AlertController,
     private router: Router
   ) {}
 
   ngOnInit() {}
+  goRegis() {
+    this.router.navigate(['admin/inicio']);
+  }
 
   async presentAlertConfirm() {
     const alert = await this.alertController.create({
       cssClass: 'my-custom-class',
       header: 'Confirmar',
-      message: '¿Estas seguro de enviar la solicitud?',
+      message: '¿Esta seguro De Agregarlo?',
       buttons: [
         {
           text: 'Cancelar',
@@ -39,8 +42,5 @@ export class SuscribirComponent implements OnInit {
     });
 
     await alert.present();
-  }
-  goRegis() {
-    this.router.navigate(['/auth/registrar']);
   }
 }

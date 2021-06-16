@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons  slot="start">
+      <ion-button (click)="goRegis()" >
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      Nuevo Suscriptor
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-title id="titulo" class="ion-padding ion-text-center">Ingrese Los Datos </ion-title>
+  <form class="suscri">
+  <ion-list>
+    <ion-item>
+      <ion-label>Tipo De Usuario</ion-label>
+      <ion-select>
+        <ion-select-option value="cedula">clínica</ion-select-option>
+        <ion-select-option value="rif">Médico</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Tipo De Documento</ion-label>
+      <ion-select>
+        <ion-select-option value="cedula">Cedula</ion-select-option>
+        <ion-select-option value="rif">Rif</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Ingrese su nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Especialidad</ion-label>
+      <ion-select>
+        <ion-select-option value="cedula">Cardiología</ion-select-option>
+        <ion-select-option value="rif">Ginecologia</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Ingrese el usuario"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Ingrese contraseña"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Ingrese su correo" type="email"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button   shape="round" expand="block" (click)="presentAlertConfirm()">Crear</ion-button> <hr>
+</form>
+</ion-content>
+
+
+
+
+
+
+
+
+
+
+
+

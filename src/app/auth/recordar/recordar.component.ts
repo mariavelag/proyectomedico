@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AlertController } from '@ionic/angular';
 import { RouterModule, Routes } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
-import {Router} from '@angular/router';;
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-recordar',
@@ -10,8 +10,11 @@ import {Router} from '@angular/router';;
   styleUrls: ['./recordar.component.scss'],
 })
 export class RecordarComponent implements OnInit {
-
-  constructor(public alertController: AlertController,private route: ActivatedRoute,private router:Router) { }
+  constructor(
+    public alertController: AlertController,
+    private route: ActivatedRoute,
+    private router: Router
+  ) {}
 
   ngOnInit() {}
   async presentAlertConfirm() {
@@ -24,7 +27,7 @@ export class RecordarComponent implements OnInit {
           text: 'Si',
           handler: () => {
             console.log('Confirm Okay');
-          }
+          },
         },
         {
           text: ' No',
@@ -32,13 +35,14 @@ export class RecordarComponent implements OnInit {
           cssClass: 'secondary',
           handler: (blah) => {
             console.log('Confirm Cancel: blah');
-          }
-        }
-      ]
+          },
+        },
+      ],
     });
 
     await alert.present();
-  };
-  atras(){
-    this.router.navigate(['/auth/login'])
-      }}
+  }
+  atras() {
+    this.router.navigate(['/auth/login']);
+  }
+}

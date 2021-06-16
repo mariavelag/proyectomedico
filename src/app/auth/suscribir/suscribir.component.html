@@ -1,43 +1,45 @@
 <ion-header>
-  <ion-toolbar color="secondary">
-    <ion-buttons  slot="start">
-      <ion-button (click)="goRegis()" >
-        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-    <ion-title>
-      Solicitud de Suscripcion
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar color="secondary">
+        <ion-buttons slot="start">
+            <ion-button (click)="goRegis()">
+                <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-title> Solicitud de Suscripcion </ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-title id="titulo" class="ion-padding ion-text-center">Solicitud De Suscripcion.</ion-title>
-  <form class="suscri">
-  <ion-list>
-    <ion-item>
-      <ion-label>Tipo De Documento</ion-label>
-      <ion-select>
-        <ion-select-option value="cedula">Cedula</ion-select-option>
-        <ion-select-option value="rif">Rif</ion-select-option>
-      </ion-select>
-    </ion-item>
-    <ion-item>
-      <ion-input placeholder="Ingrese Cedula"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-input placeholder="Ingrese su nombre"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-input placeholder="Ingrese su apellido"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-input placeholder="Ingrese su telefono"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-input placeholder="Ingrese su correo" type="email"></ion-input>
-    </ion-item>
-  </ion-list>
-  <ion-button   shape="round" expand="block" (click)="presentAlertConfirm()">Enviar</ion-button> <hr>
-</form>
+    <ion-title id="titulo" class="ion-padding ion-text-center">Solicitud De Suscripcion.</ion-title>
+    <form class="suscri">
+        <ion-list>
+            <ion-item>
+                <ion-label>Tipo De Documento</ion-label>
+                <ion-select>
+                    <ion-select-option value="cedula">Cedula</ion-select-option>
+                    <ion-select-option value="rif">Rif</ion-select-option>
+                </ion-select>
+            </ion-item>
+            <ion-item>
+                <ion-input placeholder="Ingrese Cedula"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input placeholder="Ingrese su nombre"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input placeholder="Ingrese su apellido"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input placeholder="Ingrese su telefono"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input placeholder="Ingrese su correo" type="email"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input placeholder="Ingrese las Especialidades"></ion-input>
+            </ion-item>
+        </ion-list>
+        <ion-button shape="round" expand="block" (click)="presentAlertConfirm()">Enviar</ion-button>
+        <hr />
+    </form>
 </ion-content>

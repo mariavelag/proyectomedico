@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons  slot="start">
+      <ion-button (click)="goRegis()" >
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      Nuevo Servicio
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-title id="titulo" class="ion-padding ion-text-center">Ingrese Los Datos </ion-title>
+  <form class="suscri">
+  <ion-list>  
+    <ion-item>
+      <ion-input placeholder="Ingrese su nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Descripción"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button   shape="round" expand="block" (click)="presentAlertConfirm()">Crear</ion-button> <hr>
+</form>
+</ion-content>
+
+
+
+
