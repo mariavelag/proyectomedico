@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+      <ion-buttons slot="start">
+          <ion-button (click)="goRegis()">
+              <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+          </ion-button>
+      </ion-buttons>
+      <ion-title> Perfil Paciente. </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+        <IonAvatar>
+            <img src="assets/img/perfil.jpg" />
+    </IonAvatar>
+       </ion-item> <ion-title id="titulo" class="ion-padding ion-text-center">Informacion del Paciente.</ion-title>
+  <form class="suscri">
+      <ion-list>
+          <ion-item>
+              <ion-label>Tipo De Documento</ion-label>
+              <ion-select>
+                  <ion-select-option value="cedula">Cedula</ion-select-option>
+                  <ion-select-option value="rif">Pasaporte</ion-select-option>
+              </ion-select>
+          </ion-item>
+          <ion-item>
+              <ion-label>Nombre: Lisbet</ion-label>
+          </ion-item>
+          <ion-item>
+              <ion-label>Apellido: Leon</ion-label>
+          </ion-item>
+          <ion-item>
+              <ion-label>Correo: lisbetleon@gmail.com</ion-label> 
+          </ion-item>
+          <ion-item>
+              <ion-label>Telefono: 04245000082</ion-label>
+          </ion-item>
+      </ion-list>
+      
+      <hr />
+  </form>
+</ion-content>

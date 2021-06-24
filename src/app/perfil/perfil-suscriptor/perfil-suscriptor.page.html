@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+      <ion-buttons slot="start">
+          <ion-button (click)="goRegis()">
+              <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+          </ion-button>
+     </ion-buttons>
+    <ion-title> Perfil Suscriptor </ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content> 
+    <ion-item>
+    <IonAvatar>
+        <img src="assets/img/user.png" />
+        <ion-title id="titulo" class="ion-padding ion-text-center">Datos del Suscriptor.</ion-title>
+   </IonAvatar>
+   </ion-item> 
+  
+  <form class="suscri">
+      <ion-list>
+          <ion-item>
+              <ion-label>Tipo De Documento</ion-label>
+              <ion-select>
+                  <ion-select-option value="cedula">Cedula</ion-select-option>
+                  <ion-select-option value="rif">Rif</ion-select-option>
+              </ion-select>
+          </ion-item>
+          <ion-item>
+              <ion-label>Cedula o Rif</ion-label>
+          </ion-item>
+          <ion-item>
+              <ion-label>Nombre Completo</ion-label>
+          </ion-item>
+          <ion-item>
+                <ion-label>Telefono</ion-label>
+          </ion-item>
+          <ion-item>
+              <ion-label>Correo</ion-label>
+          </ion-item>
+    
+              
+           <ion-item>
+                <ion-label>Especialidades:</ion-label>
+                <ion-select>
+                    <ion-select-option value="cedula">Examenes</ion-select-option>
+                    <ion-select-option value="radio">Radiografias</ion-select-option>
+                    <ion-select-option value="Terapias">Terapias</ion-select-option>
+                    <ion-select-option value="consulta">Consulta</ion-select-option>
+                </ion-select>
+
+            </ion-item>
+            
+         
+        </ion-list>
+       
+      <ion-button shape="round" expand="block" (click)="presentAlertConfirm()">Modificar</ion-button>
+      <ion-button shape="round" expand="block" (click)="presentAlertConfirm()">Eliminar</ion-button>
+      <hr />
+  </form>
+</ion-content>

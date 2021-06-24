@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+      <ion-buttons slot="start">
+          <ion-button (click)="goRegis()">
+              <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+          </ion-button>
+     </ion-buttons>
+    <ion-title> Servicios Medicos </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-item>
+  <IonAvatar>
+      <img src="assets/img/medico.jpg" />
+      <ion-title id="titulo" class="ion-padding ion-text-center">Servicios del Disponibles:</ion-title>
+ </IonAvatar>
+ </ion-item> 
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div>
+         Especialidad
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+         Contacto
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          Costo
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          Ubicacion
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div>
+         Cardiologia  
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+         0253-5465435
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          60$
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          Av.bolivar con calle16
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-item>
+    <ion-label>Comentarios:</ion-label>
+    <ion-input placeholder="Tu opinion nos importa..."></ion-input>
+     
+</ion-item>
+<ion-button shape="round" expand="block" (click)="presentAlertConfirm()">Buscar Ubicacion</ion-button>
+     
+</ion-content>

@@ -1,0 +1,38 @@
+.suscri{
+    
+    margin-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+
+ 
+    ion-item{
+    
+        border-radius: 5%;
+        border-color: grey;
+        border-width: 2px;
+        border-style:solid;
+        margin-bottom: 10px;
+    }
+    
+    ion-button{
+        margin-top: 8px;
+        height: 48px;
+        font-size: 18px;
+        text-transform: initial;
+        border-radius: 30px;
+        box-shadow: 1px 8px 8px o px rg(0,0,0,0.05);
+        --box-shadow:none;
+    }
+}
+
+ion-content{
+background:ivory;
+#titulo{
+    font-weight: 700;
+    font-size: 26px;
+    color:black;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+}
