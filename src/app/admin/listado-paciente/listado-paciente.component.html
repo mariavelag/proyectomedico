@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-toolbar color="secondary">
+        <ion-buttons slot="start">
+            <ion-button (click)="goRegis()">
+                <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-title> Listado De Pacientes </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-searchbar placeholder="Buscar"></ion-searchbar>
+    <ion-list>
+        <ion-item item-stars *ngFor="let item of listaDePacientes">
+            <ion-avatar>
+                <img [src]="item.imgURL" />
+            </ion-avatar>
+            <button>
+        <ion-label>
+          {{ item.nombre }}
+        </ion-label>
+      </button>
+        </ion-item>
+    </ion-list>
+</ion-content>
