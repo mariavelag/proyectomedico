@@ -9,6 +9,7 @@ import { AgregarServiComponent } from './agregar-servi/agregar-servi.component';
 import { AgregueSusComponent } from './agregue-sus/agregue-sus.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { ListadoServicioComponent } from './listado-servicio/listado-servicio.component';
+import { ListadoPacienteComponent } from './listado-paciente/listado-paciente.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { ListadoServicioComponent } from './listado-servicio/listado-servicio.co
     AgregarServiComponent,
     AgregueSusComponent,
     InicioComponent,
+    ListadoPacienteComponent,
   ],
   imports: [CommonModule, FormsModule, IonicModule, AdminPageRoutingModule],
 })

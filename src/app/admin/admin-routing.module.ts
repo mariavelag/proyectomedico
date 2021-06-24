@@ -5,6 +5,7 @@ import { ListadoSuscriptoComponent } from './listado-suscripto/listado-suscripto
 import { AgregueSusComponent } from './agregue-sus/agregue-sus.component';
 import { AgregarServiComponent } from './agregar-servi/agregar-servi.component';
 import { ListadoServicioComponent } from './listado-servicio/listado-servicio.component';
+import { ListadoPacienteComponent } from './listado-paciente/listado-paciente.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'listadoServicio',
     component: ListadoServicioComponent,
+  },
+  {
+    path: 'listadoPaciente',
+    component: ListadoPacienteComponent,
   },
 ];
 
