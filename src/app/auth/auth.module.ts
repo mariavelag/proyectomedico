@@ -6,6 +6,7 @@ import { RecordarComponent } from './recordar/recordar.component';
 import { RegisCliComponent } from './regis-cli/regis-cli.component';
 import { SuscribirComponent } from './suscribir/suscribir.component';
 import { IonicModule } from '@ionic/angular';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,12 @@ import { IonicModule } from '@ionic/angular';
     SuscribirComponent,
     RegisCliComponent,
   ],
-  imports: [CommonModule, IonicModule, AuthRoutingModule],
+  imports: [
+    CommonModule,
+    IonicModule,
+    AuthRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
 })
 export class AuthModule {}

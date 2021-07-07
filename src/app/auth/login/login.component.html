@@ -1,24 +1,27 @@
 <ion-content class="ion-padding ion-text-center">
-  <figure text-center class="logo">
-    <img src="assets/img/logo.jpg"/>
-  </figure>
+    <figure text-center class="logo">
+        <img src="assets/img/logo.jpg" />
+    </figure>
 
-
-  <ion-title>Bienvenidos a MediMap.</ion-title>
-  <div class="form">
-  <ion-list>
-    <ion-item>
-      <ion-input placeholder="Usuario" type="email"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-input placeholder="Contraseña" type="password"></ion-input>
-    </ion-item>
-  </ion-list>
-  <ion-button shape="round" expand="block" [routerLink]="['/home']" >Entrar</ion-button> <hr>
-  <h6> ¿Deseas registrarte? </h6>
-  <ion-button shape="round" expand="block"  color="light" (click)="goRegis()"  > Registrar</ion-button> <hr>
-  <h6> ¿Olvidaste contraseña? </h6>
-  <ion-button shape="round"  expand="block"  color="light" (click)="goRecor()"  >Recuperar Contraseña</ion-button>
-</div>
-
+    <ion-title>Bienvenidos a MediMap.</ion-title>
+    <form *ngIf="userFormGroup" [formGroup]="userFormGroup">
+        <div class="form">
+            <ion-list>
+                <ion-item>
+                    <ion-input formControlName="username" placeholder="Usuario" type="email"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-input formControlName="password" placeholder="Contraseña" type="password"></ion-input>
+                </ion-item>
+            </ion-list>
+            <ion-button [disabled]="userFormGroup.invalid" shape="round" expand="block" (click)="login()">Entrar</ion-button>
+            <hr />
+            <h6>¿Deseas registrarte?</h6>
+            <ion-button shape="round" expand="block" color="light" (click)="goRegis()">
+                Registrar</ion-button>
+            <hr />
+            <h6>¿Olvidaste contraseña?</h6>
+            <ion-button shape="round" expand="block" color="light" (click)="goRecor()">Recuperar Contraseña</ion-button>
+        </div>
+    </form>
 </ion-content>

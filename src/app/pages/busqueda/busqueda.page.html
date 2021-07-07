@@ -1,33 +1,34 @@
 <ion-header>
-  <ion-toolbar color="secondary">
-      <ion-title> Buscanos Aqui..!</ion-title>
-      <ion-buttons slot="start">
-          <ion-menu-button menu="menuone"></ion-menu-button>
-      </ion-buttons>
-  </ion-toolbar>
+    <ion-toolbar color="secondary">
+        <ion-title> Buscanos Aqui..!</ion-title>
+        <ion-buttons slot="start">
+            <ion-menu-button menu="menuone"></ion-menu-button>
+        </ion-buttons>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-card>
-      <img src="assets/img/mapgeo.jpg " alt="Logo de MediMap" />
-      <ion-card-content>
-          <ion-card-title>
-              <h1><strong> Mapa Geolocalizacion.</strong></h1>
-          </ion-card-title>
-          <p>
-              Servicios Medicos Cercanos...
-          </p>
-                   <ion-item>
-            <ion-label>Especialidad:</ion-label><ion-input placeholder="servicio"></ion-input>
-        </ion-item>
-          <ion-item>
-            <ion-label>Precio:</ion-label><ion-input placeholder="$$"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-label>Ubicación:</ion-label><ion-input placeholder="mi ubicacion"></ion-input>
-        </ion-item>
-        <ion-button shape="round" expand="block" (click)="presentAlertConfirm()">Buscar Medico</ion-button>
-  
-      </ion-card-content>
-  </ion-card>
+    <ion-card>
+        <img src="assets/img/mapgeo.jpg " alt="Logo de MediMap" />
+        <ion-card-content>
+            <ion-card-title>
+                <h1><strong> Mapa Geolocalizacion.</strong></h1>
+            </ion-card-title>
+            <p>Servicios Medicos Cercanos...</p>
+            <ion-item>
+                <ion-label>Especialidad:</ion-label>
+                <ion-input placeholder="servicio"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>Precio:</ion-label>
+                <ion-input placeholder="$$"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>Ubicación:</ion-label>
+                <ion-input placeholder="mi ubicacion"></ion-input>
+            </ion-item>
+            <!-- <ion-button shape="round" expand="block" (click)="presentAlertConfirm()">Buscar Medico</ion-button> --->
+            <ion-button shape="round" expand="block">Buscar Medico</ion-button>
+        </ion-card-content>
+    </ion-card>
 </ion-content>
